@@ -15,7 +15,7 @@ const SwaggerSpec = {
   definition: {
     openapi: "3.0.3",
     info: {
-      title: "Login-PUMPS",
+      title: "Login-Clothes Boys",
       version: "1.0.0",
     },
     servers: [
