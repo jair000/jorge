@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PUMPS &mdash;Zapatillas de buena calidad</title>
+
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="./fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/jpg" href="images/pumps.jpeg" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- Sing in  Form -->
+      <section class="sign-in">
+        <div class="container">
+          <div class="signin-content">
+            <div class="signin-image">
+              <figure>
+                <img src="./images/signin-image.jpg" alt="sing up image" />
+              </figure>
+              <a href="register.html" class="signup-image-link">Crear cuenta</a>
+            </div>
+
+            <div class="signin-form">
+              <h2 class="form-title">INICIAR SESIÓN</h2>
+              <form
+                method="POST"
+                class="register-form"
+                id="login-form"
+                action="/authenticate"
+              >
+                <div class="form-group">
+                  <label for="correo"
+                    ><i class="zmdi zmdi-account material-icons-name"></i
+                  ></label>
+                  <input
+                    type="email"
+                    name="correo"
+                    id="correo"
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Contraseña"
+                    required
+                    minlength="7"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="checkbox"
+                    name="remember-me"
+                    id="remember-me"
+                    class="agree-term" checked disabled
+                  />
+                  <label for="remember-me" class="label-agree-term"
+                    ><span><span></span></span>Recordarme</label
+                  >
+                </div>
+                <div class="form-group form-button">
+                  <input
+                    type="submit"
+                    name="signin"
+                    id="signin"
+                    class="form-submit"
+                    value="Iniciar sesión"
+                  />
+                </div>
+                <div
+                  class="alert alert-warning"
+                  role="alert"
+                  id="message_error2"
+                >
+                  Error! Ingresó los datos son incorrectos.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ? CUSTOM CODE -->
+    <script src="./js/main.js"></script>
+
+    <!-- TODO: SWEETALERT2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/sweetalert.js"></script>
+  </body>
+</html>

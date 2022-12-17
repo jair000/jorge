@@ -1,0 +1,26 @@
+###
+POST http://localhost:8080/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "correo": "jairoaiadawroa@gmail.com",
+    "password": "jairo42342342"
+}
+
+###
+GET http://localhost:8080/api/usuarios HTTP/1.1
+
+###
+GET http://localhost:8080/api/usuarios/637abde5b45e0e65bf18eaa0 HTTP/1.1
+
+###
+PUT http://localhost:8080/api/usuarios/637abde5b45e0e65bf18eaa0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "correo": "kkkkkk@gmail.com",
+    "contraseña": "Carlosbrrr"
+}
+
+###
+DELETE http://localhost:8080/api/users/637ac50c4ee671df495bee40 HTTP/1.1

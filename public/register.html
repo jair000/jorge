@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUMPS &mdash;Zapatillas de buena calidad</title>
+
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="./fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/jpg" href="images/pumps.jpeg" />
+  </head>
+  <body>
+    <div class="main" id="register">
+      <!-- Sign up form -->
+      <section class="signup">
+        <div class="container">
+          <div class="signup-content">
+            <div class="signup-form">
+              <h2 class="form-title">REGISTRARSE</h2>
+              <form
+                method="POST"
+                class="register-form"
+                id="register-form"
+                action="/register"
+              >
+                <div class="form-group">
+                  <label for="correo"><i class="zmdi zmdi-email"></i></label>
+                  <input
+                    type="email"
+                    name="correo"
+                    id="correo"
+                    placeholder="Ingresa tu correo electrónico"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contraseña"><i class="zmdi zmdi-lock"></i></label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Ingresa una contraseña"
+                    required
+                    minlength="7"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="checkbox"
+                    name="agree-term"
+                    id="agree-term"
+                    class="agree-term" checked disabled
+                  />
+                  <label for="agree-term" class="label-agree-term"
+                    ><span><span></span></span>Estoy de acuerdo con los
+                    <a href="#" class="term-service"
+                      >Términos y condiciones.</a
+                    ></label
+                  >
+                </div>
+                <div class="form-group form-button">
+                  <input
+                    type="submit"
+                    name="signup"
+                    id="signup"
+                    class="form-submit"
+                    value="Registrarse"
+                  />
+                </div>
+                <div
+                  class="alert alert-warning"
+                  role="alert"
+                  id="message_error2"
+                >
+                  Error! Esta cuenta ya existe.
+                </div>
+              </form>
+            </div>
+            <div class="signup-image">
+              <figure>
+                <img src="./images/signup-image.jpg" alt="sing up image" />
+              </figure>
+              <a href="index.html" class="signup-image-link"
+                >Ya tengo una cuenta</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+    ></script>
+
+    <!-- todo CUSTOM CODE FB -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
